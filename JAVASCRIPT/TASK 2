@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript TASK 2</title>
+</head>
+
+<body>
+    <h1> This is the Second TASK of Javascript. </h1>
+    <p> A Javascript function that returns a passed string with letters in alphabetical order.</p>
+    <p> The String is: 'webmaster'</p>
+    <script>
+        function alpha(str) {
+            var arr = str.split(""); 
+            res = arr.sort().join(""); 
+            return res;
+        }
+        
+        console.log(alpha("webmaster"));
+    </script>
+</body>
+
+</html>
