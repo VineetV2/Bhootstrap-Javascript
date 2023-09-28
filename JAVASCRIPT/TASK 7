@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript TASK 7</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 200px;
+            position: relative;
+            animation-duration: 5s;
+            animation-name: move;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="box" id="animatedBox">
+            <img src="./Train Animation Image.jpg" alt="train" style="width: 300px" />
+        </div>
+        <button onclick="startAnimation()">Start Train</button>
+        <button onclick="stopAnimation()">Stop Train</button>
+        <script>
+            let animationInterval;
+            function startAnimation() {
+                const animatedBox = document.getElementById("animatedBox");
+                animatedBox.style.animationPlayState = "running";
+            }
+            function stopAnimation() {
+                const animatedBox = document.getElementById("animatedBox");
+                animatedBox.style.animationPlayState = "paused";
+            }
+        </script>
+    </center>
+</body>
+
+</html>
