@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript TASK 3</title>
+</head>
+<center>
+    <body style="margin: 50px">
+        <style>
+            .box {
+                width: 300px;
+                height: 230px;
+                border: 2px solid black;
+                padding: 30px;
+            }
+        </style>
+
+        <div class="box">
+            <h3>Multiplication and Division using Javascript</h3>
+            <form>
+                1st Number : <input type="text" id="firstNumber" style="margin-top: 15px;" placeholder="Enter the First Number" /><br>
+                2nd Number: <input type="text" id="secondNumber" style="margin-top: 20px;" placeholder="Enter the Second Number"/><br>
+                <input type="button" onclick="multiplyBy()" Value="Multiply" style="margin-top: 15px;" />
+                <input type="button" onclick="divideBy()" value="Divide" style="margin-top: 15px; margin-left:15px;" />
+            </form>
+
+            <p>The Result is : <br>
+                <span id="result"></span>
+            </p>
+        </div>
+
+        <script>
+            function multiplyBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 * num2;
+            }
+            function divideBy() {
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+        </script>
+    </body>
+</center>
+
+</html>
