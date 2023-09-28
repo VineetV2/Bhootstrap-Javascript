@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript TASK 1</title>
+</head>
+
+<body>
+    <h1> This is the First TASK of Javascript.</h1>
+    <p> Reversing a given number.</p>
+    <p> The number is:  32243</p>
+    <script>
+        function reverseFunction(num) {
+            let numStr = num.toString();
+            let reversedStr = '';
+            for (let i = numStr.length - 1; i >= 0; i--) {
+                reversedStr += numStr[i];
+            }
+            return parseInt(reversedStr);
+        };
+        num = 32243;
+        reversedNum = reverseFunction(num);
+
+        console.log(reversedNum);        
+    </script>
+</body>
+
+</html>
