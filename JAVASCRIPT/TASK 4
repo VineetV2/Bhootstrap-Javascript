@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript TASK 4</title>
+</head>
+<center>
+<body>
+    <style>
+        .box{
+            width: 300px;
+                height: 230px;
+                border: 2px solid black;
+                padding: 30px;
+        }
+    </style>
+    <div class="box">
+    <h1>Current date and time: </h1>
+    <button onclick="CurrentDate()"> Show Date </button>
+    <button onclick="CurrentTime()">Show Time </button>
+    <p id="date"></p>
+    <p id="time"></p>
+
+    <script>
+        function CurrentDate(){
+            var today = new Date();
+            var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+            document.getElementById("date").innerHTML= date;
+        }
+
+        function CurrentTime(){
+            var today = new Date();
+            document.getElementById("time").innerHTML=today;
+        }
+    
+    </script>
+</div>
+</body>
+</center>
+</html>
